@@ -38,7 +38,8 @@ anywhere in the repository to tag the commit and start CI.
 
 ```
 git fetch origin master
-git checkout origin/master
+git checkout master
+git rebase -i origin/master  # should be a no-op
 releasetool tag
 ```
 
